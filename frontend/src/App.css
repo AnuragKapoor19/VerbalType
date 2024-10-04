@@ -1,0 +1,114 @@
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #171738;
+}
+
+p{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0 50px;
+}
+
+.content-container {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #171738;
+    padding:20px 35px 35px 35px;
+    border-radius: 20px;
+}
+
+.main-content {
+    width: 100%;
+    height: 50vh;
+    background-color: #FBFEF9;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-wrap: break-word;
+    overflow: scroll;
+    padding: 5px 10px;
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button{
+    height: fit-content;
+    width: 7rem;
+    padding:5px 10px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #00A7E1;
+    color: #D9F4C7;
+    border: 1px solid #D9F4C7;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+button:hover{
+    background-color: #00a9e1b4;
+    border: 2px solid #D9F4C7;
+}
+
+button:active{
+    background-color: #00a9e1e2;
+}
+
+button:visited{
+    background-color: #00A7E1;
+}
+
+@media screen and (max-width:780px){
+    .content-container{
+        width: 70vw;
+    }
+
+    .buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    button{
+        margin: 10px;
+        height: fit-content;
+        width: 6rem;
+        font-size: large;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:497px){
+    .buttons{
+        justify-content: space-around;
+    }
+}   
+
+
